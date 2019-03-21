@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainPage">
+
+
+    <fragment
+        android:id="@+id/mainPage"
+        android:name="com.example.baithak.MainPage"
+        android:label="mainpage"
+        tools:layout="@layout/mainpage" >
+        <action
+            android:id="@+id/action_mainPage_to_findRestaurant"
+            app:destination="@id/findRestaurant" />
+    </fragment>
+    <fragment
+        android:id="@+id/findRestaurant"
+        android:name="com.example.baithak.FindRestaurant"
+        android:label="find_restaurant"
+        tools:layout="@layout/find_restaurant" >
+
+        <action
+            android:id="@+id/action_findRestaurant_to_searchPlaces"
+            app:destination="@id/searchPlaces" />
+        <argument
+            android:name="category"
+            app:argType="string" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/searchPlaces"
+        android:name="com.example.baithak.SearchPlaces"
+        android:label="search_restaurant"
+        tools:layout="@layout/search_restaurant" >
+        <action
+            android:id="@+id/action_searchPlaces_to_showResults"
+            app:destination="@id/showResults" />
+        <argument android:name="dataprovider" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/showResults"
+        android:name="com.example.baithak.ShowResults"
+        android:label="show_results"
+        tools:layout="@layout/show_results"
+
+        >
+        <action
+            android:id="@+id/action_showResults_to_restaurantDescription"
+            app:destination="@id/restaurantDescription"
+
+            />
+        <argument android:name="sendDescription" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/restaurantDescription"
+        android:name="com.example.baithak.RestaurantDescription"
+        android:label="description_restaurant"
+        tools:layout="@layout/description_restaurant" />
+</navigation>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+android:orientation="vertical"
+        android:background="@drawable/layout_background">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+
+            android:src="@drawable/category"
+            android:id="@+id/text2"
+
+            />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+android:background="@android:color/transparent"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    android:layout_marginBottom="30dp"
+
+    >
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+android:textSize="17sp"
+android:background="@drawable/button_a"
+    android:textStyle="italic"
+    android:textAlignment="center"
+    android:tag="8"
+android:id="@+id/breakfast"
+    android:text="Breakfast"
+    />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textAlignment="center"
+        android:text="Lunch"
+        android:id="@+id/lunch"
+        android:textSize="17sp"
+        android:tag="9"
+        android:background="@drawable/button_a"
+        android:layout_marginTop="10dp"
+        android:textStyle="italic"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_a"
+        android:text="Dinner"
+        android:tag="10"
+        android:id="@+id/dinner"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textStyle="italic"
+        android:background="@drawable/button_a"
+        android:textSize="17sp"
+       android:id="@+id/pub"
+        android:textAlignment="center"
+        android:tag="11"
+        android:layout_marginTop="10dp"
+        android:text="Pub and bars"
+                />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:tag="1"
+        android:textSize="17sp"
+        android:id="@+id/delivery"
+        android:background="@drawable/button_a"
+android:text="Delivery"
+        android:textStyle="italic"
+
+        />
+
+
+</LinearLayout>
+
+
+</RelativeLayout>
